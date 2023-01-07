@@ -26,5 +26,10 @@
 		"vite": "^4.0.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@capacitor/android": "^4.6.1",
+		"@capacitor/cli": "^4.6.1",
+		"@capacitor/core": "^4.6.1"
+	}
 }

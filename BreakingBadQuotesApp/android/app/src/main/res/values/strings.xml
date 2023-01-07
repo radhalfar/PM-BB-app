@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Breaking Bad Quotes</string>
+    <string name="title_activity_main">Breaking Bad Quotes</string>
+    <string name="package_name">cz.utb.fai.breakingbadquotes</string>
+    <string name="custom_url_scheme">cz.utb.fai.breakingbadquotes</string>
+</resources>
