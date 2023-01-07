@@ -3,7 +3,7 @@
 </script>
 
 <div class="page"
-    in:fly="{{ y: 250, duration: 250, delay: 300}}"
+    in:fly="{{ y: 250, duration: 250, delay: 100}}"
     out:fly="{{ y: 250, duration: 250, }}" 
 >
 <slot></slot>
@@ -12,6 +12,5 @@
 <style>
     .page {
 		position: fixed;
-        margin: 1rem;
 	}
 </style>

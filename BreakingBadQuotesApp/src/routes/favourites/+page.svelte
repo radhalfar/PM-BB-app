@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { PageData } from './$types';
-    import PageDefaultTransition from '$lib/PageDefaultTransition.svelte';
+    import PageDefaultTransition from '$lib/PageTransitions/DefaultTransition.svelte';
     
     // export let data: PageData;
 </script>

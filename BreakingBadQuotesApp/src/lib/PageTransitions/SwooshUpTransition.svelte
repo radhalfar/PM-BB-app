@@ -1,0 +1,54 @@
+<script lang="ts">
+	import type { TransitionConfig } from "svelte/transition";
+
+
+    interface BorderFillParams {
+        duration?: number;
+        x?: number;
+        y?: number;
+        borderRadius? : number;
+    }
+
+	function borderFill(node: Element, { duration , x , y, borderRadius }: BorderFillParams): TransitionConfig {
+		return {
+			duration,
+			css: t => {
+                if(!x) {
+                    x = 0;
+                }
+
+                if(!y) {
+                    y = 0;
+                }
+
+                if(!borderRadius) {
+                    borderRadius = 6;
+                }
+
+				return `
+                    border-radius: ${borderRadius - (t * borderRadius)}px;
+                    transform: translate(${x}px, ${y - (t * y)}px);
+                    opacity: ${t * 1};
+					`
+			}
+		};
+	}
+
+    
+</script>
+
+<div class="page"
+    in:borderFill="{{duration: 250, y: 500, borderRadius: 150}}"
+    out:borderFill="{{duration: 200, y: 250, borderRadius: 150}}" >
+<slot></slot>
+</div>
+
+<style>
+    .page {
+		position: fixed;
+        transform: translate(0px, 0px);
+        border-radius: 0;
+        display: block;
+        overflow: hidden;
+	}
+</style>
