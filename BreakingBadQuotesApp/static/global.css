@@ -1,0 +1,33 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    font-size: 16px;
+    font-family: "Raleway Regular";
+    --text-primary: #ececec;
+    --text-secondary: #FFFFFF;
+    --bg-primary: #016A32;
+    --bg-secondary: #085933;
+    --transition-speed: 600ms;
+  }
