@@ -1,12 +1,32 @@
-<script lang="ts">
+<script>
     import PageDefaultTransition from "$lib/PageTransitions/DefaultTransition.svelte";
+	import SwooshUpTransition from "$lib/PageTransitions/SwooshUpTransition.svelte";
+    import { quotes } from "$lib/stores/brba_store";
 </script>
 
-<PageDefaultTransition>
+<SwooshUpTransition>
     <main>
-        <h1>Welcome to SvelteKit</h1>
-        <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-    </main>
+        {#each $quotes as quote}
+        <div class="quote">
+            <p>{quote.quote}</p>
+            <p style="text-align: right; font-style: italic;">{quote.author}</p>
+        </div>
+        {/each}
 
-</PageDefaultTransition>
+    </main>
+</SwooshUpTransition>
+
+<style>
+    main {
+        padding: 1rem;
+        background-color: bisque;
+        color: black;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .quote {
+        margin: 1rem 0;
+    }
+</style>
 

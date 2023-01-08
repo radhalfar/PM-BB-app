@@ -15,12 +15,24 @@ html {
 body {
     min-height: 100vh;
     max-width: 100vw;
-    background-color: #ececec;
+    background-image: url("brba.jpg");
+    background-position: 78% 0 ;
+    background-size: auto 100vh;
+    background-color: #ffffff;
 }
 
 img, picture, svg, video {
     display: block;
     max-width: 100%;
+}
+
+/* DISABLES WEIRD COLORS ON BUTTONS */
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(51, 51, 51, 0.5);
 }
 
 :root {
@@ -31,5 +43,18 @@ img, picture, svg, video {
     --bg-primary: #016A32;
     --bg-secondary: #085933;
     --transition-speed: 600ms;
-  }
+}
+
+/* DISABLES TURNING OF THE PHONE */
+@media (orientation: landscape) {
+    html {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+}
 

@@ -3,10 +3,10 @@
 
     export const items : MenuItem[] = [
         {
-            id : "favourites",
-            href : "/favourites",
-            linkText : "Oblíbené",
-            iconSrc : "icons/feather-sprite.svg#star"
+            id : "settings",
+            href : "/settings",
+            linkText : "Nastavení",
+            iconSrc : "icons/feather-sprite.svg#settings"
         },
         {
             id : "home",
@@ -15,10 +15,10 @@
             iconSrc : "icons/feather-sprite.svg#home"
         },        
         {
-            id : "settings",
-            href : "/settings",
-            linkText : "Nastavení",
-            iconSrc : "icons/feather-sprite.svg#settings"
+            id : "favourites",
+            href : "/favourites",
+            linkText : "Oblíbené",
+            iconSrc : "icons/feather-sprite.svg#star"
         }
     ];
 
@@ -70,7 +70,7 @@
     a {
         display: flex;
         align-items: center;
-        height: 4rem;
+        height: 3.2rem;
         color: var(--text-primary);
         text-decoration: none;
         filter: grayscale(100%) opacity(0.7);
@@ -109,7 +109,7 @@
         nav {
             bottom: 0;
             width: 100vw;
-            height: 4rem;
+            height: 3.2rem;
         }
 
         ul {
@@ -119,10 +119,6 @@
         a {
             justify-content: center;
         }
-
-        /* main {
-            margin: 0;
-        } */
     }
 
     /* Large screens */
@@ -140,10 +136,5 @@
         nav:hover span {
             display: inline;
         }
-
-        /* .navbar:hover .logo svg
-        {
-            margin-left: 11rem;
-        } */
     }
 </style>
