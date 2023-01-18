@@ -71,7 +71,7 @@
         display: flex;
         align-items: center;
         height: 3.2rem;
-        color: var(--text-primary);
+        color: #ececec;
         text-decoration: none;
         filter: grayscale(100%) opacity(0.7);
         transition: var(--transition-speed);
@@ -80,7 +80,7 @@
     a:hover {
         filter: grayscale(0%) opacity(1);
         background: var(--bg-secondary);
-        color: var(--text-secondary);
+        color: #FFFFFF;
     }
 
     span {

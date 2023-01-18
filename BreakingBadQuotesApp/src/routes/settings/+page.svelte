@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SwooshUpTransition from '$lib/PageTransitions/SwooshUpTransition.svelte';
+	import SwooshUpTransition from '$lib/components/PageTransitions/SwooshUpTransition.svelte';
     import type { PageData } from './$types';
     
 
@@ -22,9 +22,9 @@
     main {
         min-height: 100vh;
         min-width: 100vw;
-        /* background-image: url("brba.jpg");
+        background-image: url("brba.jpg");
         background-position: 78% 0 ;
-        background-size: auto 100vh; */
+        background-size: auto 100vh;
         padding: 1rem;
         filter: grayscale(100%);
     }

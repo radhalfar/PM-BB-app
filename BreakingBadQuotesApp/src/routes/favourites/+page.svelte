@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { PageData } from './$types';
-    import PageDefaultTransition from '$lib/PageTransitions/DefaultTransition.svelte';
-	import SwooshUpTransition from '$lib/PageTransitions/SwooshUpTransition.svelte';
+    import PageDefaultTransition from '$lib/components/PageTransitions/DefaultTransition.svelte';
+	import SwooshUpTransition from '$lib/components/PageTransitions/SwooshUpTransition.svelte';
     
     // export let data: PageData;
 </script>
@@ -15,7 +15,9 @@
 
 <style>
     main {
-        background-color: aqua;
+        background-color: rgb(194, 255, 208);
+        padding: 1rem;
+        color: black;
         display: flex;
         flex-direction: column;
         justify-content: center;

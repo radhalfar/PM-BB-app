@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { TransitionConfig } from "svelte/transition";
+    import {fade} from "svelte/transition";
 
 
     interface BorderFillParams {
@@ -38,8 +39,8 @@
 </script>
 
 <div class="page"
-    in:borderFill="{{duration: 250, y: 500, borderRadius: 150}}"
-    out:borderFill="{{duration: 200, y: 250, borderRadius: 150}}" >
+    in:borderFill="{{duration: 300, y: 250, borderRadius: 150}}"
+    out:fade="{{duration: 250, delay: 100}}" >
 <slot></slot>
 </div>
 

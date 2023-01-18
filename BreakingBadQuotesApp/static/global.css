@@ -38,7 +38,7 @@ a {
 :root {
     font-size: 16px;
     font-family: "Raleway Regular";
-    --text-primary: #ececec;
+    --text-primary: #000000;
     --text-secondary: #FFFFFF;
     --bg-primary: #016A32;
     --bg-secondary: #085933;
