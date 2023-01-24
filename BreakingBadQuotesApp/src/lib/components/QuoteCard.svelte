@@ -41,6 +41,7 @@
 
     .quote {
         min-height: 80vh;
-        height: 80vh;
+        height: 100%;
+        position: relative;
     }
 </style>

@@ -16,11 +16,10 @@
 
 <style>
     img {
-        width: 70%;
-        height: 75%;
+        width: 100vw;
         object-fit: cover;
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 1rem;
+        right: -1rem;
     }
 </style>

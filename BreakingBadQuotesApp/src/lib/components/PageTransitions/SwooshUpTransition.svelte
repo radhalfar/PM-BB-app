@@ -41,7 +41,7 @@
 <div class="page"
     in:borderFill="{{duration: 300, y: 250, borderRadius: 150}}"
     out:fade="{{duration: 250, delay: 100}}" >
-<slot></slot>
+<slot/>
 </div>
 
 <style>

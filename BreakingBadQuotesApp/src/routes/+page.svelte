@@ -1,19 +1,19 @@
 <script>
-    import PageDefaultTransition from "$lib/components/PageTransitions/DefaultTransition.svelte";
 	import SwooshUpTransition from "$lib/components/PageTransitions/SwooshUpTransition.svelte";
 	import QuoteCard from "$lib/components/QuoteCard.svelte";
-	import Swipeable from "$lib/components/Swipeable.svelte";
-    import { quotes, fetchQuote } from "$lib/stores/brba_store";
+    import { quotes } from "$lib/stores/brba_store";
+
+    function buttonClick() {
+        quotes.refresh(1);
+    }
 </script>
 
 <SwooshUpTransition>
-    <main>
-        <QuoteCard quote={$quotes[0]} />
-        <!--         
-        {#each $quotes as q}
-                <QuoteCard quote={q} />
-        {/each} -->
-
+    <main on:click={buttonClick} on:keypress={buttonClick}>
+        <!-- <button on:click={buttonClick}>New Quotes</button> -->
+        {#each $quotes as quote}
+            <QuoteCard quote={quote}/>
+        {/each}
     </main>
 </SwooshUpTransition>
 
