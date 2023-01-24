@@ -50,6 +50,6 @@
         transform: translate(0px, 0px);
         border-radius: 0;
         display: block;
-        overflow: hidden;
+        overflow: scroll;
 	}
 </style>

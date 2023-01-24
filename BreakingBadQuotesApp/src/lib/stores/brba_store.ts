@@ -6,12 +6,10 @@ import type { Quote } from "$lib/interfaces/Quote";
 
 export const quotes : Writable<Quote[]> = writable([] as Quote[]);
 
-async function fetchQuote() {
+export async function fetchQuote() {
     const url : string = "https://api.breakingbadquotes.xyz/v1/quotes/5";
     const res = await fetch(url);
     const data : Quote[] = await res.json();
 
     quotes.set(data);
 }
-
-fetchQuote();

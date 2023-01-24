@@ -3,14 +3,16 @@
 	import SwooshUpTransition from "$lib/components/PageTransitions/SwooshUpTransition.svelte";
 	import QuoteCard from "$lib/components/QuoteCard.svelte";
 	import Swipeable from "$lib/components/Swipeable.svelte";
-    import { quotes } from "$lib/stores/brba_store";
+    import { quotes, fetchQuote } from "$lib/stores/brba_store";
 </script>
 
 <SwooshUpTransition>
     <main>
+        <QuoteCard quote={$quotes[0]} />
+        <!--         
         {#each $quotes as q}
                 <QuoteCard quote={q} />
-        {/each}
+        {/each} -->
 
     </main>
 </SwooshUpTransition>
