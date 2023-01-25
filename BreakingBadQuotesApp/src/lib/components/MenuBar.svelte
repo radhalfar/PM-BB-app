@@ -4,9 +4,9 @@
     export const items : MenuItem[] = [
         {
             id : "settings",
-            href : "/settings",
-            linkText : "Nastavení",
-            iconSrc : "icons/feather-sprite.svg#settings"
+            href : "/search",
+            linkText : "Vyhledávání",
+            iconSrc : "icons/feather-sprite.svg#search"
         },
         {
             id : "home",

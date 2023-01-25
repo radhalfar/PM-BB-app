@@ -2,6 +2,7 @@
 	import type { TransitionConfig } from "svelte/transition";
     import {fade} from "svelte/transition";
 
+    export let enableScrolling = false;
 
     interface BorderFillParams {
         duration?: number;
@@ -38,7 +39,7 @@
     
 </script>
 
-<div class="page"
+<div class="page" class:en={enableScrolling} class:dis={!enableScrolling}
     in:borderFill="{{duration: 300, y: 250, borderRadius: 150}}"
     out:fade="{{duration: 250, delay: 100}}" >
 <slot/>
@@ -50,6 +51,14 @@
         transform: translate(0px, 0px);
         border-radius: 0;
         display: block;
-        overflow: clip;
+        height: 100%;
 	}
+
+    .en {
+        overflow: scroll;
+    }
+
+    .dis {
+        overflow: clip;
+    }
 </style>
