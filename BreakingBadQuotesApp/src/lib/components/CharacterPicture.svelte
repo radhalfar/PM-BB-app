@@ -19,7 +19,8 @@
         width: 100vw;
         object-fit: cover;
         position: absolute;
-        bottom: 1rem;
+        top: 20vh;
         right: -1rem;
+        z-index: 10;
     }
 </style>

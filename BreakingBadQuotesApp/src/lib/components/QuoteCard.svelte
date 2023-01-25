@@ -12,6 +12,7 @@
     </div>
     <CharacterPicture characterName={quote.author}/>
     <!-- <ButtonsForQuote/> -->
+    
 </div>
 
 <style>
@@ -40,8 +41,8 @@
     }
 
     .quote {
-        min-height: 80vh;
-        height: 100%;
+        min-height: 60vh;
+        height: 60%;
         position: relative;
     }
 </style>
